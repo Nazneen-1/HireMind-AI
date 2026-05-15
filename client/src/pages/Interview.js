@@ -29,7 +29,7 @@ function Interview() {
       try {
         // Get AI feedback + score
         const aiRes = await axios.post(
-          "http://hiremind-ai-t3ql.onrender.com/api/ai/feedback",
+          "https://hiremind-ai-t3ql.onrender.com/api/ai/feedback",
           {
             answers: updatedAnswers
           }
@@ -40,7 +40,7 @@ function Interview() {
 
         // Save result in MongoDB
         await axios.post(
-          "http://hiremind-ai-t3ql.onrender.com/api/result/save",
+          "https://hiremind-ai-t3ql.onrender.com/api/result/save",
           {
             userId: user.id,
             answers: updatedAnswers,

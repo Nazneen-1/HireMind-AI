@@ -22,7 +22,7 @@ function Login() {
 
     try {
       const res = await axios.post(
-        "http://hiremind-ai-t3ql.onrender.com/api/auth/login",
+        "https://hiremind-ai-t3ql.onrender.com/api/auth/login",
         form
       );
 

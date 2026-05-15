@@ -19,7 +19,7 @@ function Dashboard() {
     const fetchStats = async () => {
       try {
         const res = await axios.get(
-          `http://hiremind-ai-t3ql.onrender.com/api/dashboard/stats/${user.id}`
+          `https://hiremind-ai-t3ql.onrender.com/api/dashboard/stats/${user.id}`
         );
 
         setStats(res.data);

@@ -13,7 +13,7 @@ function Result() {
     const getAI = async () => {
       try {
         const res = await axios.post(
-          "http://hiremind-ai-t3ql.onrender.com/api/ai/feedback",
+          "https://hiremind-ai-t3ql.onrender.com/api/ai/feedback",
           { answers }
         );
 
